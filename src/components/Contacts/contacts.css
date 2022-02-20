@@ -1,0 +1,87 @@
+.table {
+    width: 100%;
+    padding: 15px;
+    border-spacing: 10px 20px;
+    font-size: 20px;
+}
+
+.table__body tr, .table__footer_btn {
+    text-align: center;
+}
+
+.table__body_btn {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center
+}
+
+.table__body_btn button {
+    border: none;
+    cursor: pointer;
+    padding: 3px 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.table__body_btn-edit {
+    background: green;
+}
+
+.table__body_btn-delete {
+    background: red;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    margin: calc((100vh - 73px - 279px)/2) auto;
+    background-color: beige;
+    border: 1px solid black;
+    max-width: 500px;
+    width: 100%;
+    padding: 5px 10px 30px;
+}
+
+.inputBox {
+    width: 100%;
+}
+
+.btnSubmitBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input, .btnSubmit, .btnClose, .table__footer_btn-add {
+    width: inherit;
+    box-sizing: border-box;
+    outline: none;
+    padding: 10px 15px;
+}
+
+.btnSubmit, .btnClose, .table__footer_btn-add {
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btnSubmit {
+    background: green;
+}
+
+.btnClose {
+    background: darkgray;
+}
+
+.table__footer_btn-add{
+    background: green;
+}
